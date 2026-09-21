@@ -1232,11 +1232,13 @@
       margin: 1rem auto;
       display: block;
     }
+
     .pie-hers {
       fill: none;
       stroke: var(--blue);
       stroke-width: 32;
     }
+
     .pie-mine {
       fill: none;
       stroke: var(--rust);
@@ -1244,6 +1246,7 @@
       stroke-dasharray: 0 100;
       transition: stroke-dasharray 2.2s ease;
     }
+
     .pie-legend {
       display: flex;
       justify-content: center;
@@ -1253,19 +1256,27 @@
       font-size: 1.5rem;
       color: var(--ink);
     }
+
     .pie-legend .legend-item {
       display: flex;
       align-items: center;
       gap: 0.5rem;
     }
+
     .legend-color {
       width: 16px;
       height: 16px;
       display: inline-block;
       border-radius: 50%;
     }
-    .legend-color.hers { background: var(--blue); }
-    .legend-color.mine { background: var(--rust); }
+
+    .legend-color.hers {
+      background: var(--blue);
+    }
+
+    .legend-color.mine {
+      background: var(--rust);
+    }
   </style>
 </head>
 
@@ -1472,7 +1483,7 @@
 
     <!-- 9.6: CONTADOR DE OK -->
     <section class="page tone-tan" id="page-oks" data-index="9.6">
-      <div class="eyebrow reveal">¿cortante o práctica?</div>
+      <div class="eyebrow reveal">¿un dato bastante peculiar?</div>
       <h2 class="reveal">contador de "ok"</h2>
       <div class="pie-container reveal" style="text-align: center;">
         <svg viewBox="0 0 32 32" class="pie-chart">
