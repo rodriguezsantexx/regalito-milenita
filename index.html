@@ -414,7 +414,8 @@
     }
 
     #page-cover .instruct {
-      color: rgba(248, 233, 180, 1); /* Opacidad al 100% para que se vea mejor */
+      color: rgba(248, 233, 180, 1);
+      /* Opacidad al 100% para que se vea mejor */
       font-family: 'Caveat', cursive;
       font-size: 1.3rem;
       margin-top: 0.5rem;
@@ -1422,7 +1423,30 @@
           <div class="bar-n">1.191</div>
         </div>
       </div>
-      <p class="note reveal">Vos sos mucho más cariñoso en los textos (casi el doble).</p>
+      <p class="note reveal">Era obvio esto, no?? te gane y por bastante (casi el doble).</p>
+    </section>
+
+    <!-- 9.6: CONTADOR DE OK -->
+    <section class="page tone-tan" id="page-oks" data-index="9.6">
+      <div class="eyebrow reveal">¿cortante o práctica?</div>
+      <h2 class="reveal">contador de "ok"</h2>
+      <div class="bars reveal">
+        <div class="bar-row">
+          <div class="bar-label">vos</div>
+          <div class="bar-track">
+            <div class="bar-fill hers" id="bar-oks-hers"></div>
+          </div>
+          <div class="bar-n">592</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">yo</div>
+          <div class="bar-track">
+            <div class="bar-fill mine" id="bar-oks-mine"></div>
+          </div>
+          <div class="bar-n">123</div>
+        </div>
+      </div>
+      <p class="note reveal">Casi tenés 5 veces más "ok"s que yo (¡715 veces en total!).</p>
     </section>
 
     <!-- 10: BUSIEST DAY -->
@@ -1966,6 +1990,8 @@
         </div>
         <div class="summary-row reveal"><span class="s-label">Términos de cariño</span><span class="s-val count-val"
             data-count="3670">3.670</span></div>
+        <div class="summary-row reveal"><span class="s-label">"Ok"s mandados</span><span class="s-val count-val"
+            data-count="715">715</span></div>
         <div class="summary-row reveal"><span class="s-label">Desde</span><span class="s-val">28 oct 2025 — hoy</span>
         </div>
       </div>
@@ -2101,6 +2127,7 @@
         if (pages[current].id === 'page-who-starts') { animateBar('bar-init-hers', 100); animateBar('bar-init-mine', 85.8); }
         if (pages[current].id === 'page-perdon') { animateBar('bar-perd-mine', 100); animateBar('bar-perd-hers', 87.4); }
         if (pages[current].id === 'page-carino') { animateBar('bar-carino-mine', 100); animateBar('bar-carino-hers', 48.0); }
+        if (pages[current].id === 'page-oks') { animateBar('bar-oks-hers', 100); animateBar('bar-oks-mine', 20.8); }
 
         if (pages[current].id === 'page-months') {
           monthIdx = 0;
